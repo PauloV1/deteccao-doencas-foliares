@@ -1,6 +1,6 @@
 # Detecção de doenças em folhas
 
-Classifica doenças foliares por imagem com uma ConvNeXt-Tiny pré-treinada, ajustada em etapas (PlantVillage → fotos de campo → culturas do Brasil). Inclui uma API de inferência com Grad-CAM e uma página web de upload. Projeto da disciplina *Tendências em Inteligência Computacional*.
+Classifica doenças foliares por imagem com uma ConvNeXt-Tiny pré-treinada, ajustada em etapas (PlantVillage → fotos de campo → culturas do Brasil), inspirada no protocolo e na escolha da arquitetura de [Antoshchuk et al. (2026)](#referências). Inclui uma API de inferência com Grad-CAM e uma página web de upload. Projeto da disciplina *Tendências em Inteligência Computacional*.
 
 > Ferramenta de apoio; não substitui a avaliação de um engenheiro agrônomo.
 
@@ -70,6 +70,28 @@ Tabelas completas, comparações e ressalvas: [`docs/resultados.md`](docs/result
 - Soja só tem a classe saudável; não há dados para cana, trigo e algodão.
 - A API sempre devolve alguma doença, mesmo para imagens que não são folhas; o limiar de 60% não é calibrado.
 - Os intervalos de confiança cobrem o sorteio das imagens de teste, não a variação entre treinos (medida pelas sementes).
+
+## Referências
+
+- ANTOSHCHUK, S.; KUNUP, T.; KRAVCHENKO, O. Plant disease identification from images using machine learning algorithms. In: *Proceedings of the International Scientific and Practical Workshop "Advanced Digital Technologies: Intelligent Systems, Modeling, and Data-Driven Control" (ADT-ISMDDC 2026)*, Odesa, 2026. CEUR Workshop Proceedings, v. 4300. Disponível em: <https://ceur-ws.org/Vol-4300/paper07.pdf>. **Artigo de referência**: protocolo PlantVillage → PlantWild → PlantDoc e escolha da ConvNeXt-Tiny.
+- HUGHES, D. P.; SALATHÉ, M. An open access repository of images on plant health to enable the development of mobile disease diagnostics. *arXiv:1511.08060*, 2015. (PlantVillage)
+- SINGH, D. et al. PlantDoc: a dataset for visual plant disease detection. *arXiv:1911.10317*, 2019. (PlantDoc)
+- WEI, T. et al. Benchmarking in-the-wild multimodal disease recognition and a versatile baseline. *arXiv:2408.03120*, 2024. (PlantWild)
+- LIU, Z. et al. A ConvNet for the 2020s. *arXiv:2201.03545*, 2022. (ConvNeXt)
+- SELVARAJU, R. R. et al. Grad-CAM: visual explanations from deep networks via gradient-based localization. *arXiv:1610.02391*, 2016.
+
+```bibtex
+@inproceedings{antoshchuk2026plant,
+  author    = {Antoshchuk, Svitlana and Kunup, Tetiana and Kravchenko, Oleg},
+  title     = {Plant disease identification from images using machine learning algorithms},
+  booktitle = {Proceedings of the International Scientific and Practical Workshop ``Advanced Digital Technologies: Intelligent Systems, Modeling, and Data-Driven Control'' (ADT-ISMDDC 2026)},
+  series    = {CEUR Workshop Proceedings},
+  volume    = {4300},
+  year      = {2026},
+  address   = {Odesa, Ukraine},
+  url       = {https://ceur-ws.org/Vol-4300/paper07.pdf}
+}
+```
 
 ## Licenças
 

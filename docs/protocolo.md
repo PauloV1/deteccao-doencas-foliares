@@ -1,6 +1,8 @@
 # Protocolo
 
 ## Modelo e treino
+A arquitetura e a sequência de bases (pré-treino no PlantVillage, ajuste no PlantWild, avaliação no PlantDoc) são inspiradas em Antoshchuk et al. (2026), que comparou EfficientNet-B0, MobileNetV3-Small, DenseNet-121 e ConvNeXt-Tiny com o mesmo protocolo; a ConvNeXt-Tiny teve o melhor top-1 no PlantDoc (62,65%, contra 48,38% da segunda colocada). Não repliquei essa comparação entre arquiteturas. Referência completa no [`README.md`](../README.md#referências).
+
 ConvNeXt-Tiny (`convnext_tiny.fb_in22k_ft_in1k`, timm), 224 px, rede inteira treinável, AdamW + cosseno com aquecimento, label smoothing 0,1, precisão mista. Aumento de dados em lote na GPU: recorte, rotação ±20°, flips e cor. Em metade das fotos do PlantVillage o fundo é trocado: a folha é segmentada (fundo = região de cor de fundo ligada à borda) e colada sobre recortes de fotos de campo de treino ou manchas sintéticas.
 
 ## Conjuntos
