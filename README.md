@@ -24,9 +24,10 @@ models/      model.pt e model_config.json (gerados pelo treino)
 
 ## Usar o modelo
 
+Baixe `model.pt` e `model_config.json` da [Release v1.0.0](https://github.com/PauloV1/deteccao-doencas-foliares/releases/tag/v1.0.0) e coloque os dois em `models/`. Os arquivos devem ser do mesmo treino: o config traz o tamanho de entrada e a lista de classes.
 ```bash
 pip install -r requirements.txt
-cp <saidas>/model.pt <saidas>/model_config.json models/
+gh release download v1.0.0 -D models --clobber   # ou baixe pelo navegador
 uvicorn api.app:app --port 8000        # http://localhost:8000 (documentação interativa em /docs)
 ```
 
