@@ -1,0 +1,17 @@
+{
+ "plantvillage": {
+  "url": "https://github.com/attaullah/downsampled-plant-disease-dataset/releases/download/v1/plant-full.zip",
+  "sha256": "ba85b799b172cb7362f41871cd292c923dc12d938b5541616114effabd14a123",
+  "bytes": 856116978
+ },
+ "plantdoc": {
+  "url": "https://github.com/pratikkayal/PlantDoc-Dataset/archive/5467f6012d78d1c446145d5f582da6096f852ae8.zip",
+  "sha256": "94e2b99a500a63efbd48923ed48588fbb01f9b1db66a2d3b5c24eed6466da20f",
+  "bytes": 984592720
+ },
+ "plantwild": {
+  "url": "https://huggingface.co/datasets/uqtwei2/PlantWild/resolve/527a72eb8f00c95e41698bb09d982c7d4625dce3/plantwild.zip",
+  "sha256": "6fe6ca45914a453e9b4907f5c2b115fc8cb8481609bd9f8f93008dabf7aca9a3",
+  "bytes": 2708493416
+ }
+}

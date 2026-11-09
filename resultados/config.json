@@ -1,0 +1,47 @@
+{
+ "tamanho": 224,
+ "trabalho": "/content/trabalho",
+ "saidas": "/content/drive/MyDrive/deteccao_folhas_saidas",
+ "pv_dir": null,
+ "pd_dir": null,
+ "pw_dir": null,
+ "epocas": 8,
+ "amostras": 20000,
+ "lote": 64,
+ "lr": 0.0001,
+ "congelar": 0,
+ "fundo_p": 0.5,
+ "campo_pai": "baseline",
+ "campo_lr": 5e-05,
+ "campo_frac": 0.5,
+ "campo_mesmo_orcamento": true,
+ "campo_epocas": 3,
+ "campo_amostras": 10000,
+ "usar_plantwild": true,
+ "todos_epocas": 4,
+ "todos_amostras": 20000,
+ "todos_mix": [
+  0.4,
+  0.15,
+  0.45
+ ],
+ "usar_br": true,
+ "br_hortalicas": false,
+ "br_epocas": 4,
+ "br_amostras": 20000,
+ "br_mix": [
+  0.3,
+  0.7
+ ],
+ "br_pot": 0.5,
+ "br_controle": true,
+ "rodar_sementes": true,
+ "sementes": [
+  1,
+  2
+ ],
+ "ablacao_fundo": true,
+ "limiar_vazamento": 0.95,
+ "exigir_gpu": true,
+ "limite_avaliacao": null
+}
